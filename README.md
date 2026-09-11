@@ -151,14 +151,14 @@ Example:
 
 import pickle
 
-with open("churn_model.pkl", "wb") as file:
-    pickle.dump(pipeline, file)
+with open("churn_pipeline.pkl", "wb") as file:
+    pickle.dump(churn_pipeline, file)
 
 
 The Streamlit application loads the saved model:
 
 with open("churn_pipeline.pkl", "rb") as file:
-    model = pickle.load(file)
+    loaded_pipeline = pickle.load(file)
 
 
 Using a complete pipeline helps ensure consistent preprocessing between training and prediction.
