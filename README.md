@@ -1,4 +1,4 @@
-Customer Churn Prediction
+## Customer Churn Prediction
 
 An end-to-end Machine Learning classification project that predicts whether a customer is likely to churn (Yes/No).
 
@@ -15,35 +15,38 @@ The project covers the complete machine learning workflow, from data preprocessi
 The goal of this project is to build a machine learning classification model that can predict customer churn based on customer-related features.
 
 The final solution allows users to enter customer information through a web interface and receive a prediction:
+| Value | Meaning |
+|---|---|
+| Yes | Customer churned |
+| No | Customer did not churn |
 
-Yes → Customer is likely to churn
-No → Customer is likely to stay
-🛠️ Technologies Used
-Python
-Pandas — Data manipulation and analysis
-NumPy — Numerical computing
-Scikit-learn — Machine learning and preprocessing
-Matplotlib & Seaborn — Data visualization
-Joblib & Pickle — Model serialization
-Streamlit — Web application
-Git & GitHub — Version control and project hosting
-Streamlit Community Cloud — Deployment
-🔄 Machine Learning Workflow
+## 🛠️ Technologies Used
+- Python
+- Pandas — Data manipulation and analysis
+- NumPy — Numerical computing
+- Scikit-learn — Machine learning and preprocessing
+- Matplotlib & Seaborn — Data visualization
+- Joblib & Pickle — Model serialization
+- Streamlit — Web application
+- Git & GitHub — Version control and project hosting
+- Streamlit Community Cloud — Deployment
+
+## 🔄 Machine Learning Workflow
 
 The project follows an end-to-end machine learning workflow:
 
-Data Collection
-Data Cleaning
-Exploratory Data Analysis (EDA)
-Feature Engineering
-Data Preprocessing
-Train-Test Split
-Model Training
-Model Evaluation
-Model/Pipeline Serialization
-Streamlit Application Development
-GitHub Upload
-Deployment on Streamlit Community Cloud
+- Data Collection
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Data Preprocessing
+- Train-Test Split
+- Model Training
+- Model Evaluation
+- Model/Pipeline Serialization
+- Streamlit Application Development
+- GitHub Upload
+- Deployment on Streamlit Community Cloud
 📊 Machine Learning Model
 
 This is a binary classification problem where the target variable is customer churn.
@@ -57,7 +60,8 @@ The preprocessing steps and trained machine learning model are combined into a s
 
 The final trained pipeline is saved as a .pkl file and loaded by the Streamlit application.
 
-📁 Project Structure
+## 📁 Project Structure
+```
 customer-churn-prediction/
 │
 ├── customer_churn_data.csv
@@ -67,15 +71,16 @@ customer-churn-prediction/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
+## File Description
+- customer_churn_data.csv — Contains the dataset used for training and evaluation.
+- model_training.ipynb — Contains exploratory data analysis and model development.
+- churn_pipeline.pkl — Contains the final trained ML pipeline.
+- app.py — Streamlit web application.
+- requirements.txt — Required Python packages.
+- README.md — Project documentation.
+- .gitignore — Files and folders excluded from GitHub.
 
-File Description
-customer_churn_data.csv — Contains the dataset used for training and evaluation.
-model_training.ipynb — Contains exploratory data analysis and model development.
-churn_pipeline.pkl — Contains the final trained ML pipeline.
-app.py — Streamlit web application.
-requirements.txt — Required Python packages.
-README.md — Project documentation.
-.gitignore — Files and folders excluded from GitHub.
 💻 Run the Project Locally
 1. Clone the Repository
 git clone [https://github.com/your-username/customer-churn-prediction.git](https://github.com/arqamowais/CustomerChurnPrediction-DSAI.git)
@@ -100,7 +105,7 @@ streamlit run app.py
 
 The application will open in your browser.
 
-🌐 Streamlit Web Application
+## 🌐 Streamlit Web Application
 
 The Streamlit application provides an interactive interface where users can enter customer information.
 
@@ -124,26 +129,26 @@ Churn Prediction
         ↓
 Yes / No
 
-📈 Model Evaluation
+## 📈 Model Evaluation
 
 The trained model is evaluated using classification metrics such as:
 
-Accuracy
-Precision
-Recall
-F1-Score
-Confusion Matrix
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
 
 Example:
 
-Accuracy  : 76.25%
-Precision : 76.87%
-Recall    : 83.08%
-F1-Score  : 79.85%
+- Accuracy  : 76.25%
+- Precision : 76.87%
+- Recall    : 83.08%
+- F1-Score  : 79.85%
 
 Replace the values above with the actual results from your trained model.
 
-📦 Model Serialization
+## 📦 Model Serialization
 
 The final trained machine learning pipeline is saved as a .pkl file.
 
@@ -163,7 +168,7 @@ with open("churn_pipeline.pkl", "rb") as file:
 
 Using a complete pipeline helps ensure consistent preprocessing between training and prediction.
 
-☁️ Deployment
+## ☁️ Deployment
 
 The application is deployed using Streamlit Community Cloud.
 
@@ -175,7 +180,7 @@ Connect the GitHub repository.
 Select app.py as the main application file.
 Deploy the application.
 Share the generated public URL.
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 Possible improvements include:
 
@@ -187,7 +192,7 @@ Adding feature importance visualizations
 Improving the Streamlit UI
 Adding batch prediction using CSV uploads
 Monitoring model performance after deployment
-👨‍💻 Author
+## 👨‍💻 Author
 
 M. Arqam Owais
 
