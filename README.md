@@ -62,15 +62,20 @@ The final trained pipeline is saved as a .pkl file and loaded by the Streamlit a
 
 ## 📁 Project Structure
 ```
-customer-churn-prediction/
+CustomerChurnPrediction-DSAI/
 │
-├── customer_churn_data.csv
+├── data/
+│   └── customer_churn_data.csv
+│
+├── models/
+│   └── churn_pipeline.pkl
+│
 ├── model_training.ipynb
-├── churn_pipeline.pkl
 ├── app.py
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+├── .gitignore
+└── .venv/
 ```
 ## File Description
 - customer_churn_data.csv — Contains the dataset used for training and evaluation.
@@ -156,13 +161,13 @@ Example:
 
 import pickle
 
-with open("churn_pipeline.pkl", "wb") as file:
+with open("models/churn_pipeline.pkl", "wb") as file:
     pickle.dump(churn_pipeline, file)
 
 
 The Streamlit application loads the saved model:
 
-with open("churn_pipeline.pkl", "rb") as file:
+with open("models/churn_pipeline.pkl", "rb") as file:
     loaded_pipeline = pickle.load(file)
 
 
