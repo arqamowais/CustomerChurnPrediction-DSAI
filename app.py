@@ -22,7 +22,7 @@ def load_model():
     Loads the complete trained ML pipeline.
     The pipeline should include preprocessing + model.
     """
-    return joblib.load("models/churn_pipeline.pkl")
+    return joblib.load("churn_pipeline.pkl")
 
 
 try:
